@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unknown Cabs - Book Your Ride</title>
+    <link rel="stylesheet" href="styles (1).css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Add Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1>Unknown Cabs</h1>
+                </div>
+                
+                <!-- Navigation Menu -->
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#" id="book-ride-btn">Delivery</a></li>
+                        <li><a href="#">Food & Groceries</a></li>
+                        <li><a href="#">Documents</a></li>
+                        <li><a href="#">SOS</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Menu Button -->
+                <div class="menu-button">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Profile</h2>
+            <button class="close-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="sidebar-menu">
+            <a href="#trip" class="menu-item">
+                <i class="fas fa-car"></i>
+                <span>Trip or Ride</span>
+            </a>
+            <a href="#driver-rider" class="menu-item">
+                <i class="fas fa-users"></i>
+                <span>Driver - Rider</span>
+            </a>
+            <a href="#favourite-drivers" class="menu-item">
+                <i class="fas fa-star"></i>
+                <span>Favourite Drivers</span>
+            </a>
+            <a href="#wallet" class="menu-item">
+                <i class="fas fa-wallet"></i>
+                <span>Wallet</span>
+            </a>
+            <a href="#documents" class="menu-item">
+                <i class="fas fa-file-alt"></i>
+                <span>Documents</span>
+            </a>
+            <a href="#safety-mode" class="menu-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Kids & Women Mode</span>
+            </a>
+            <a href="#map-settings" class="menu-item">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>Map Settings</span>
+            </a>
+            <a href="#emergency" class="menu-item emergency">
+                <i class="fas fa-ambulance"></i>
+                <span>Safety/Emergency SOS</span>
+            </a>
+            <a href="#help" class="menu-item">
+                <i class="fas fa-question-circle"></i>
+                <span>Help & Support</span>
+            </a>
+            <a href="#logout" class="menu-item logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Menu Content Sections -->
+    <div class="menu-content">
+        <!-- Trip or Ride Section -->
+        <div class="content-section" id="trip-section">
+            <div class="section-header">
+                <h2>Trip or Ride</h2>
+                <button class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="trip-history">
+                <div class="trip-card">
+                    <div class="trip-info">
+                        <div class="trip-route">
+                            <span class="pickup">Airport</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <span class="dropoff">Home</span>
+                        </div>
+                        <div class="trip-date">Today, 2:30 PM</div>
+                    </div>
+                    <div class="trip-status completed">Completed</div>
+                </div>
+                <!-- More trip cards -->
+            </div>
+        </div>
+
+        <!-- Driver - Rider Section -->
+        <div class="content-section" id="driver-rider-section">
+            <div class="section-header">
+                <h2>Driver - Rider</h2>
+                <button class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="driver-rider-info">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="https://via.placeholder.com/100" alt="Profile">
+                    </div>
+                    <div class="profile-details">
+                        <h3>John Doe</h3>
+                        <p>Driver ID: #12345</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Favourite Drivers Section -->
+        <div class="content-section" id="favourite-drivers-section">
+            <div class="section-header">
+                <h2>Favourite Drivers</h2>
+                <button class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="favourite-drivers-list">
+                <div class="driver-card">
+                    <img src="https://via.placeholder.com/60" alt="Driver">
+                    <div class="driver-info">
+                        <h4>Mike Johnson</h4>
+                        <p>Rating: 4.9</p>
+                    </div>
+                    <button class="remove-favourite">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wallet Section -->
+        <div class="content-section" id="wallet-section">
+            <div class="section-header">
+                <h2>Wallet</h2>
+                <button class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="wallet-balance">
+                <h3>Available Balance</h3>
+                <div class="balance">₹500</div>
+                <button class="add-money-btn">Add Money</button>
+            </div>
+            <div class="transaction-history">
+                <h3>Transaction History</h3>
+                <div class="transaction-list">
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <span class="type">Added Money</span>
+                            <span class="date">Today, 10:30 AM</span>
+                        </div>
+                        <span class="amount positive">+₹1000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Documents Section -->
+        <div class="content-section" id="documents-section">
+            <div class="section-header">
+                <h2>Documents</h2>
+                <button class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="documents-list">
+                <div class="document-card">
+                    <i class="fas fa-id-card"></i>
+                    <div class="document-info">
+                        <h4>ID Proof</h4>
+                        <p>Last updated: 2 days ago</p>
+                    </div>
+                    <button class="update-btn">Update</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kids & Women Mode Section -->
+        <div class="content-section" id="safety-mode-section">
+            <div class="section-header">
+                <h2>Kids & Women Mode</h2>
+                <button class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="safety-mode-content">
+                <div class="mode-toggle">
+                    <h3>Enable Safety Mode</h3>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="safety-features">
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="feature-info">
+                            <h4>Share Trip Details</h4>
+                            <p>Automatically share your trip details with trusted contacts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Settings Section -->
+        <div class="content-section" id="map-settings-section">
+            <div class="section-header">
+                <h2>Map Settings</h2>
+                <button class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="map-settings-content">
+                <div class="setting-item">
+                    <h4>Map Type</h4>
+                    <select class="map-type-select">
+                        <option value="standard">Standard</option>
+                        <option value="satellite">Satellite</option>
+                        <option value="terrain">Terrain</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <h4>Default Location</h4>
+                    <input type="text" placeholder="Enter default location">
+                </div>
+            </div>
+        </div>
+
+        <!-- Safety/Emergency SOS Section -->
+        <div class="content-section" id="emergency-section">
+            <div class="section-header">
+                <h2>Safety/Emergency SOS</h2>
+                <button class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="emergency-content">
+                <button class="emergency-btn">
+                    <i class="fas fa-ambulance"></i>
+                    <span>Emergency SOS</span>
+                </button>
+                <div class="emergency-contacts">
+                    <h3>Emergency Contacts</h3>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <div class="contact-info">
+                                <h4>Police</h4>
+                                <p>100</p>
+                            </div>
+                            <button class="call-btn">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Help & Support Section -->
+        <div class="content-section" id="help-section">
+            <div class="section-header">
+                <h2>Help & Support</h2>
+                <button class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="help-content">
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>How do I book a ride?</h4>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>To book a ride, simply enter your pickup and drop-off locations, select your preferred ride type, and click on "Book Now".</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-support">
+                    <h3>Contact Support</h3>
+                    <button class="chat-btn">
+                        <i class="fas fa-comments"></i>
+                        Start Chat
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logout Section -->
+        <div class="content-section" id="logout-section">
+            <div class="section-header">
+                <h2>Logout</h2>
+                <button class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+            <div class="logout-content">
+                <div class="logout-message">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <h3>Are you sure you want to logout?</h3>
+                    <p>You'll need to login again to access your account.</p>
+                </div>
+                <div class="logout-actions">
+                    <button class="cancel-btn">Cancel</button>
+                    <button class="confirm-logout-btn">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add this right after your header -->
+    <div id="booking-page" class="booking-page hidden">
+        <div class="booking-interface">
+            <div class="booking-left">
+                <!-- Booking Form Section -->
+                <div class="ride-booking-section">
+                    <div class="booking-tabs">
+                        <button class="tab-btn active">DAILY RIDES</button>
+                        <button class="tab-btn">OUTSTATION</button>
+                        <button class="tab-btn">RENTALS</button>
+                    </div>
+
+                    <div class="booking-form-container">
+                        <div class="form-group">
+                            <label>FROM</label>
+                            <div class="location-input">
+                                <span class="location-dot pickup"></span>
+                                <input type="text" placeholder="Current Location" id="pickup-location">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>TO</label>
+                            <div class="location-input">
+                                <span class="location-dot dropoff"></span>
+                                <input type="text" placeholder="Enter Destination" id="dropoff-location">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>WHEN</label>
+                            <div class="time-select">
+                                <select id="ride-time">
+                                    <option value="now">Now</option>
+                                    <option value="schedule">Schedule for later</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="available-rides">
+                            <h3>AVAILABLE RIDES</h3>
+                            <div class="ride-options">
+                                <div class="ride-card">
+                                    <div class="ride-info">
+                                        <div class="ride-icon">
+                                            <i class="fas fa-car-side"></i>
+                                        </div>
+                                        <div class="ride-details">
+                                            <h4>Auto</h4>
+                                            <p>Get an auto at your doorstep</p>
+                                        </div>
+                                    </div>
+                                    <div class="ride-time">2 min</div>
+                                </div>
+                                <!-- More ride options -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="booking-right">
+                <div id="map" class="booking-map">
+                    <span>Map will be displayed here</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2>Experience Luxury<br>on Every Journey</h2>
+                <p>Your premium ride awaits with our fleet of luxury vehicles</p>
+                <button class="hero-btn">
+                    Book Your Ride
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-container">
+                <!-- Booking Tabs -->
+                <div class="booking-tabs">
+                    <button class="tab-btn active">Daily Rides</button>
+                    <button class="tab-btn">Rental</button>
+                    <button class="tab-btn">Outstation</button>
+                </div>
+                
+                <!-- Booking Form -->
+                <div class="location-inputs">
+                    <div class="location-input">
+                        <div class="input-icon">
+                            <span class="location-dot pickup"></span>
+                        </div>
+                        <input type="text" placeholder="Enter pickup location" id="pickup">
+                    </div>
+                    
+                    <div class="location-input">
+                        <div class="input-icon">
+                            <span class="location-dot dropoff"></span>
+                        </div>
+                        <input type="text" placeholder="Enter drop-off location" id="dropoff">
+                    </div>
+
+                    <button class="search-btn">
+                        Search
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Map Placeholder -->
+            <div class="map-placeholder">
+                <div class="map-overlay">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Map integration will be available here</p>
+                </div>
+                <!-- New Buttons -->
+                <button class="map-button left-button">Saved or Liked or Favourite Spots</button>
+                <button class="map-button right-button">Near By Findings</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Available Rides Section -->
+    <section class="services-grid">
+        <div class="container">
+            <div class="grid-container">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car" style="color: #1e88e5;"></i>
+                    </div>
+                    <span class="service-name">Rides</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-key" style="color: #1e88e5;"></i>
+                    </div>
+                    <span class="service-name">Community   </span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-box" style="color: #1e88e5;"></i>
+                    </div>
+                    <span class="service-name">Ticket booking</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pizza-slice" style="color: #1e88e5;"></i>
+                    </div>
+                    <span class="service-name">Find my vehicle</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users" style="color: #1e88e5;"></i>
+                    </div>
+                    <span class="service-name">Rental</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ticket-alt" style="color: #1e88e5;"></i>
+                    </div>
+                    <span class="service-name">Buy and Sale</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Section -->
+    <section class="rental-section">
+        <div class="container">
+            <div class="rental-grid">
+                <div class="rental-card">
+                    <div class="rental-image">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=800" alt="Car Rental">
+                    </div>
+                    <div class="rental-content">
+                        <h3>Rental</h3>
+                        <p>Rent a car for your day trips and outstation travel</p>
+                        <ul class="rental-features">
+                            <li><i class="fas fa-check"></i> Flexible duration</li>
+                            <li><i class="fas fa-check"></i> All-inclusive pricing</li>
+                            <li><i class="fas fa-check"></i> 24/7 support</li>
+                        </ul>
+                        <button class="rental-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="rental-card">
+                    <div class="rental-image">
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=800" alt="Bike Rental">
+                    </div>
+                    <div class="rental-content">
+                        <h3>Buy and Sale</h3>
+                        <p>Explore the city on two wheels with our bike rental service</p>
+                        <ul class="rental-features">
+                            <li><i class="fas fa-check"></i> Hourly & daily rates</li>
+                            <li><i class="fas fa-check"></i> Fuel included</li>
+                            <li><i class="fas fa-check"></i> Insurance coverage</li>
+                        </ul>
+                        <button class="rental-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Delivery Section -->
+    <section class="food-section">
+        <div class="container">
+            <div class="food-grid">
+                <div class="food-card">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=800" alt="Food Delivery">
+                    </div>
+                    <div class="food-content">
+                        <h3>Food Delivery</h3>
+                        <p>Order from your favorite restaurants</p>
+                        <div class="food-features">
+                            <div class="feature">
+                                <i class="fas fa-utensils"></i>
+                                <span>Wide selection</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>Quick delivery</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-star"></i>
+                                <span>Best quality</span>
+                            </div>
+                        </div>
+                        <button class="food-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Unknown Cabs?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Safe Rides</h3>
+                    <p>Your safety is our top priority with verified drivers and real-time tracking</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Quick Pickup</h3>
+                    <p>Get a cab at your doorstep within minutes with our extensive driver network</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-wallet"></i>
+                    <h3>Affordable</h3>
+                    <p>Enjoy competitive rates and special discounts on all your rides</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Banner -->
+    <section class="promo-banner">
+        <div class="container">
+            <div class="promo-content">
+                <div class="promo-text">
+                    <h2>Experience Premium Travel</h2>
+                    <p>Book your luxury ride today and travel in style!</p>
+                    <button class="hero-btn">
+                        Book Now
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="promo-image">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=800" alt="Luxury Car">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Unknown Cabs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot -->
+    <div class="chatbot-container">
+        <!-- Chat Button -->
+        <button class="chat-button" id="chatButton">
+            <i class="fas fa-robot"></i>
+        </button>
+
+        <!-- Chat Window -->
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Assistant</span>
+                </div>
+                <button class="close-chat" id="closeChat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <i class="fas fa-robot bot-icon"></i>
+                        <p>Hi! I'm your AI assistant. How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message..." id="messageInput">
+                <button class="send-button" id="sendMessage">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Overlay -->
+    <div id="login-overlay" class="login-overlay">
+        <div class="login-modal">
+            <div class="login-header">
+                <h2>Welcome to Unknown Cabs</h2>
+                <p>Please log in to continue</p>
+            </div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="username" placeholder="Enter your username" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="login-password" placeholder="Enter your password" required>
+                    </div>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" checked>
+                    <label for="remember">Remember me</label>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <div id="login-error" class="login-error"></div>
+            </form>
+            <div class="demo-credentials">
+                <p>Demo credentials:</p>
+                <p>Username: <span>demo</span> | Password: <span>password</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script (1).js"></script>
+</body>
+</html>
